@@ -1,0 +1,37 @@
+.main_content_board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.main_content_board_tasks {
+  position: relative;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: auto; 
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100vw;
+  gap: 20px; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .main_content_board_tasks {
+    flex-direction: column;
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .main_content_board_tasks > * {
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+}

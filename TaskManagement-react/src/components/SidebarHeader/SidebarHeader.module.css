@@ -1,0 +1,33 @@
+.sidebarHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 60px;
+  }
+
+.logo_img{
+    height: 50px;
+    width: 50px;
+}
+
+.nombre_logo{
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+@media(max-width:768px){
+.logo_img{
+    height: 40px;
+    width: 40px;
+    margin-left: -10px;
+}
+
+.nombre_logo{
+    opacity: 0;
+}
+
+}

@@ -1,0 +1,131 @@
+
+.search{
+    height: 60px;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+.search_img{
+    position:relative;
+    left: 35px;
+    transition: transform 0.3s ease;
+ }
+
+ .nav_search, .nav_search_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.nav_search {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.nav_search_right {
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.prof{
+    border-radius: 50px;
+}  
+
+.search_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.search_input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 30px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search_input:focus {
+    border-color: #e0e0e0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.4); 
+}
+
+.nav_search:has(.search_input:focus) .search_img {
+    transform: scale(0.8);
+    transition: transform 0.3s ease; 
+}
+
+.characs_img{
+    height: 50px;
+    width: 50px;
+}
+
+.board{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.board_right{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+#board_select {
+    width: 100%; 
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    outline: none;
+    white-space: normal;
+}
+#board_select:focus {
+    border-color: #007BFF; 
+}
+  
+
+
+@media(max-width:768px){
+.characs_img{
+    height: 30px;
+    width: 30px;
+}
+
+.search_input {
+    width: 100%;
+    font-size: 16px;
+}
+.nav_search_right {
+    gap: 5px;
+    padding-right: 20px;
+    justify-content: center;  
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.board {
+    flex-direction: column;
+    h1{
+        font-size: 25px;
+    }
+}
+
+#board_select {
+    font-size: 12px;
+    padding: 7px;
+}
+
+}

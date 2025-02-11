@@ -1,0 +1,137 @@
+
+
+.Main_content_analytics{
+    margin-left: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .main_content_graphics{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 450px;
+  }
+
+  .graphics{
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .graphics p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  .graphics_size{
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: 20px;
+  }
+
+  .states_categories{
+    margin-left: 90px;
+    height: 400px;
+    width: 90%;
+  }
+
+  .filters_tasks{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .filter_buttons{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #D0E8FF;
+    border: 1px solid #e0e0e0;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .filter_buttons.selected {
+    background-color: green; 
+  }
+
+  .filter_buttons:hover{
+    background-color: #FF6347;
+  }
+
+  .tasks_table{
+    height: auto;
+    margin: 20px 20px 20px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .fade_in {
+    animation: fadeIn 0.5s ease-in-out;  
+  }
+
+  /* barchart*/
+  canvas {
+    max-width: 90%;  
+    max-height: 90%; 
+    display: block;  
+  }
+
+
+@media(max-width:768px){
+  .Main_content_analytics{
+      margin-left: 20px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+  }
+
+  .main_content_graphics{
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+      align-items: center;
+    }
+
+    .graphics{
+      height: auto;
+      width: 100%;
+      margin-left: 20px;
+      box-sizing: border-box;
+    }
+
+    .graphics_size{
+      max-width: 400px;
+      max-height: 400px;
+      margin-left: 20px;
+    }
+
+    .states_categories{
+      margin-top: 80px;
+      margin-left: 0;
+      height: 400px;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .filters_tasks{
+      display: flex;
+      justify-content:  flex-start;
+      margin-top: 20px;
+      gap: 20px;
+    }
+}
